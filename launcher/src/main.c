@@ -1456,7 +1456,7 @@ static void remap_if_changed(App *a)
 #define VCFG_STR2(x) #x
 #define VCFG_STR(x) VCFG_STR2(x)
 #ifdef VCFG_VER
-#define VCFG_VERSION VCFG_STR(VCFG_VER)   // build_pkg.ps1 passes -DVCFG_VER=<version>
+#define VCFG_VERSION VCFG_STR(VCFG_VER) "-custom"   // fork build; build_pkg.ps1 passes -DVCFG_VER=<version>
 #else
 #define VCFG_VERSION "dev"
 #endif

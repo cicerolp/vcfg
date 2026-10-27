@@ -12,7 +12,7 @@
 #define VCFG_TSTR2(x) #x
 #define VCFG_TSTR(x) VCFG_TSTR2(x)
 #ifdef VCFG_VER
-#define VCFG_TRACE_VERSION VCFG_TSTR(VCFG_VER)
+#define VCFG_TRACE_VERSION VCFG_TSTR(VCFG_VER) "-custom"   // fork build: upstream version + custom commits
 #else
 #define VCFG_TRACE_VERSION "dev"
 #endif
